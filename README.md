@@ -1,6 +1,6 @@
 # csc-680-Final-Project
 
-##Project Proposal
+## Project Proposal
 This is an IOS App that will allow users to create a portfolio and upload projects that is visible to other users. In addiition to uploading projects, users will be able to post updates about their projects. 
 <br>
 ## Actions Users can take
