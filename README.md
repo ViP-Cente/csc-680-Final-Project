@@ -10,5 +10,5 @@ This is an IOS App that will allow users to create a portfolio and upload projec
 * Login and Register Accounts
   * Details may include: Username, Password, Name, Education, links, skills
 * Search
-  * Users can search for accounts, Projects, schools, skils
+  * Users can search for accounts, Projects, schools, skills
 * Send messages to other users       
