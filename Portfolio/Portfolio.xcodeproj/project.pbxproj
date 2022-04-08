@@ -72,13 +72,13 @@
 		B536B4D727F6ABC2003A1210 /* Portfolio */ = {
 			isa = PBXGroup;
 			children = (
+				B56300F62800370C00E06098 /* SignInViews */,
 				B536B4ED27FE4837003A1210 /* GoogleService-Info.plist */,
 				B536B4D827F6ABC2003A1210 /* PortfolioApp.swift */,
 				B536B4DA27F6ABC2003A1210 /* ContentView.swift */,
 				B536B4DC27F6ABC3003A1210 /* Assets.xcassets */,
 				B536B4DE27F6ABC3003A1210 /* Preview Content */,
 				B536B4EF27FFB828003A1210 /* Session.swift */,
-				B56300F1280024AF00E06098 /* SignInView.swift */,
 			);
 			path = Portfolio;
 			sourceTree = "<group>";
@@ -89,6 +89,14 @@
 				B536B4DF27F6ABC3003A1210 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B56300F62800370C00E06098 /* SignInViews */ = {
+			isa = PBXGroup;
+			children = (
+				B56300F1280024AF00E06098 /* SignInView.swift */,
+			);
+			path = SignInViews;
 			sourceTree = "<group>";
 		};
 		E2AE8B6F593E47FF45BB74E5 /* Pods */ = {

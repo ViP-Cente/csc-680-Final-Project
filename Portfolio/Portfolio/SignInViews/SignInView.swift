@@ -24,8 +24,10 @@ struct SignInView : View {
                 //print(error)
                 self.error = true
             } else {
+                //Try with "test@mail.com password" when testing for success
                 self.email = ""
                 self.password = ""
+                print("Completed Sign-In")
             }
         }
     }
