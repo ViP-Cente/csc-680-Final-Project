@@ -6,17 +6,32 @@
 //
 
 import SwiftUI
-import Firebase
+
 
 struct ContentView: View {
+    
+    @EnvironmentObject var session: SessionStore
+    
+    func getUser(){
+        session.listen()
+    }
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Group{
+            if (session.session != nil) {
+                Text("Hello User!")
+            } else {
+                Text("Auth Screen Here")
+            }
+        }.onAppear(perform: getUser)
     }
 }
 
+#if DEBUG
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(SessionStore())
     }
 }
+#endif

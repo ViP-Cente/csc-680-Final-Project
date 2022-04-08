@@ -15,6 +15,11 @@
 		B536B4EA27F6B82D003A1210 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B536B4E927F6B82D003A1210 /* FirebaseAuth */; };
 		B536B4EC27F6B82D003A1210 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = B536B4EB27F6B82D003A1210 /* FirebaseDatabase */; };
 		B536B4EE27FE4837003A1210 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B536B4ED27FE4837003A1210 /* GoogleService-Info.plist */; };
+		B536B4F027FFB828003A1210 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = B536B4EF27FFB828003A1210 /* Session.swift */; };
+		B536B4F327FFC616003A1210 /* CombineFirebase in Frameworks */ = {isa = PBXBuildFile; productRef = B536B4F227FFC616003A1210 /* CombineFirebase */; };
+		B536B4F527FFC616003A1210 /* CombineFirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B536B4F427FFC616003A1210 /* CombineFirebaseAuth */; };
+		B536B4F727FFC616003A1210 /* CombineFirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = B536B4F627FFC616003A1210 /* CombineFirebaseDatabase */; };
+		B536B4F927FFC616003A1210 /* CombineFirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B536B4F827FFC616003A1210 /* CombineFirebaseFirestore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,7 @@
 		B536B4DC27F6ABC3003A1210 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B536B4DF27F6ABC3003A1210 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B536B4ED27FE4837003A1210 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B536B4EF27FFB828003A1210 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,7 +37,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B536B4F527FFC616003A1210 /* CombineFirebaseAuth in Frameworks */,
+				B536B4F927FFC616003A1210 /* CombineFirebaseFirestore in Frameworks */,
 				B536B4EC27F6B82D003A1210 /* FirebaseDatabase in Frameworks */,
+				B536B4F727FFC616003A1210 /* CombineFirebaseDatabase in Frameworks */,
+				B536B4F327FFC616003A1210 /* CombineFirebase in Frameworks */,
 				B536B4E827F6B82D003A1210 /* FirebaseAnalytics in Frameworks */,
 				B536B4EA27F6B82D003A1210 /* FirebaseAuth in Frameworks */,
 			);
@@ -64,6 +74,7 @@
 				B536B4DA27F6ABC2003A1210 /* ContentView.swift */,
 				B536B4DC27F6ABC3003A1210 /* Assets.xcassets */,
 				B536B4DE27F6ABC3003A1210 /* Preview Content */,
+				B536B4EF27FFB828003A1210 /* Session.swift */,
 			);
 			path = Portfolio;
 			sourceTree = "<group>";
@@ -96,6 +107,10 @@
 				B536B4E727F6B82D003A1210 /* FirebaseAnalytics */,
 				B536B4E927F6B82D003A1210 /* FirebaseAuth */,
 				B536B4EB27F6B82D003A1210 /* FirebaseDatabase */,
+				B536B4F227FFC616003A1210 /* CombineFirebase */,
+				B536B4F427FFC616003A1210 /* CombineFirebaseAuth */,
+				B536B4F627FFC616003A1210 /* CombineFirebaseDatabase */,
+				B536B4F827FFC616003A1210 /* CombineFirebaseFirestore */,
 			);
 			productName = Portfolio;
 			productReference = B536B4D527F6ABC2003A1210 /* Portfolio.app */;
@@ -127,6 +142,7 @@
 			mainGroup = B536B4CC27F6ABC2003A1210;
 			packageReferences = (
 				B536B4E627F6B82D003A1210 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				B536B4F127FFC616003A1210 /* XCRemoteSwiftPackageReference "CombineFirebase" */,
 			);
 			productRefGroup = B536B4D627F6ABC2003A1210 /* Products */;
 			projectDirPath = "";
@@ -157,6 +173,7 @@
 			files = (
 				B536B4DB27F6ABC2003A1210 /* ContentView.swift in Sources */,
 				B536B4D927F6ABC2003A1210 /* PortfolioApp.swift in Sources */,
+				B536B4F027FFB828003A1210 /* Session.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +386,14 @@
 				kind = branch;
 			};
 		};
+		B536B4F127FFC616003A1210 /* XCRemoteSwiftPackageReference "CombineFirebase" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rever-ai/CombineFirebase";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -386,6 +411,26 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B536B4E627F6B82D003A1210 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseDatabase;
+		};
+		B536B4F227FFC616003A1210 /* CombineFirebase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B536B4F127FFC616003A1210 /* XCRemoteSwiftPackageReference "CombineFirebase" */;
+			productName = CombineFirebase;
+		};
+		B536B4F427FFC616003A1210 /* CombineFirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B536B4F127FFC616003A1210 /* XCRemoteSwiftPackageReference "CombineFirebase" */;
+			productName = CombineFirebaseAuth;
+		};
+		B536B4F627FFC616003A1210 /* CombineFirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B536B4F127FFC616003A1210 /* XCRemoteSwiftPackageReference "CombineFirebase" */;
+			productName = CombineFirebaseDatabase;
+		};
+		B536B4F827FFC616003A1210 /* CombineFirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B536B4F127FFC616003A1210 /* XCRemoteSwiftPackageReference "CombineFirebase" */;
+			productName = CombineFirebaseFirestore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
