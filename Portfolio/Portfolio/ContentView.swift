@@ -21,7 +21,7 @@ struct ContentView: View {
             if (session.session != nil) {
                 Text("Hello User!")
             } else {
-                Text("Auth Screen Here")
+                SignInView()
             }
         }.onAppear(perform: getUser)
     }
