@@ -7,22 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3ED8AE5567B122E932B63AE2 /* Pods_Portfolio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A06B2A4544AB96C7A9917D85 /* Pods_Portfolio.framework */; };
 		B536B4D927F6ABC2003A1210 /* PortfolioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B536B4D827F6ABC2003A1210 /* PortfolioApp.swift */; };
 		B536B4DB27F6ABC2003A1210 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B536B4DA27F6ABC2003A1210 /* ContentView.swift */; };
 		B536B4DD27F6ABC3003A1210 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B536B4DC27F6ABC3003A1210 /* Assets.xcassets */; };
 		B536B4E027F6ABC3003A1210 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B536B4DF27F6ABC3003A1210 /* Preview Assets.xcassets */; };
-		B536B4E827F6B82D003A1210 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = B536B4E727F6B82D003A1210 /* FirebaseAnalytics */; };
-		B536B4EA27F6B82D003A1210 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B536B4E927F6B82D003A1210 /* FirebaseAuth */; };
-		B536B4EC27F6B82D003A1210 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = B536B4EB27F6B82D003A1210 /* FirebaseDatabase */; };
 		B536B4EE27FE4837003A1210 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B536B4ED27FE4837003A1210 /* GoogleService-Info.plist */; };
 		B536B4F027FFB828003A1210 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = B536B4EF27FFB828003A1210 /* Session.swift */; };
-		B536B4F327FFC616003A1210 /* CombineFirebase in Frameworks */ = {isa = PBXBuildFile; productRef = B536B4F227FFC616003A1210 /* CombineFirebase */; };
-		B536B4F527FFC616003A1210 /* CombineFirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B536B4F427FFC616003A1210 /* CombineFirebaseAuth */; };
-		B536B4F727FFC616003A1210 /* CombineFirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = B536B4F627FFC616003A1210 /* CombineFirebaseDatabase */; };
-		B536B4F927FFC616003A1210 /* CombineFirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B536B4F827FFC616003A1210 /* CombineFirebaseFirestore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F4374E92813931774BE8372 /* Pods-Portfolio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Portfolio.debug.xcconfig"; path = "Target Support Files/Pods-Portfolio/Pods-Portfolio.debug.xcconfig"; sourceTree = "<group>"; };
+		A06B2A4544AB96C7A9917D85 /* Pods_Portfolio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Portfolio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B536B4D527F6ABC2003A1210 /* Portfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Portfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B536B4D827F6ABC2003A1210 /* PortfolioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioApp.swift; sourceTree = "<group>"; };
 		B536B4DA27F6ABC2003A1210 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -30,6 +26,7 @@
 		B536B4DF27F6ABC3003A1210 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B536B4ED27FE4837003A1210 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B536B4EF27FFB828003A1210 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		CC678A0C9CF75D97E1E02FF0 /* Pods-Portfolio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Portfolio.release.xcconfig"; path = "Target Support Files/Pods-Portfolio/Pods-Portfolio.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,24 +34,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B536B4F527FFC616003A1210 /* CombineFirebaseAuth in Frameworks */,
-				B536B4F927FFC616003A1210 /* CombineFirebaseFirestore in Frameworks */,
-				B536B4EC27F6B82D003A1210 /* FirebaseDatabase in Frameworks */,
-				B536B4F727FFC616003A1210 /* CombineFirebaseDatabase in Frameworks */,
-				B536B4F327FFC616003A1210 /* CombineFirebase in Frameworks */,
-				B536B4E827F6B82D003A1210 /* FirebaseAnalytics in Frameworks */,
-				B536B4EA27F6B82D003A1210 /* FirebaseAuth in Frameworks */,
+				3ED8AE5567B122E932B63AE2 /* Pods_Portfolio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		80B5363BA1FB320FE0924401 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A06B2A4544AB96C7A9917D85 /* Pods_Portfolio.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B536B4CC27F6ABC2003A1210 = {
 			isa = PBXGroup;
 			children = (
 				B536B4D727F6ABC2003A1210 /* Portfolio */,
 				B536B4D627F6ABC2003A1210 /* Products */,
+				E2AE8B6F593E47FF45BB74E5 /* Pods */,
+				80B5363BA1FB320FE0924401 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +88,16 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		E2AE8B6F593E47FF45BB74E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F4374E92813931774BE8372 /* Pods-Portfolio.debug.xcconfig */,
+				CC678A0C9CF75D97E1E02FF0 /* Pods-Portfolio.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -94,24 +105,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B536B4E327F6ABC3003A1210 /* Build configuration list for PBXNativeTarget "Portfolio" */;
 			buildPhases = (
+				0EA13F47489A52FBEA237857 /* [CP] Check Pods Manifest.lock */,
 				B536B4D127F6ABC2003A1210 /* Sources */,
 				B536B4D227F6ABC2003A1210 /* Frameworks */,
 				B536B4D327F6ABC2003A1210 /* Resources */,
+				C1BFDAABA798EDE0EC9C05EC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Portfolio;
-			packageProductDependencies = (
-				B536B4E727F6B82D003A1210 /* FirebaseAnalytics */,
-				B536B4E927F6B82D003A1210 /* FirebaseAuth */,
-				B536B4EB27F6B82D003A1210 /* FirebaseDatabase */,
-				B536B4F227FFC616003A1210 /* CombineFirebase */,
-				B536B4F427FFC616003A1210 /* CombineFirebaseAuth */,
-				B536B4F627FFC616003A1210 /* CombineFirebaseDatabase */,
-				B536B4F827FFC616003A1210 /* CombineFirebaseFirestore */,
-			);
 			productName = Portfolio;
 			productReference = B536B4D527F6ABC2003A1210 /* Portfolio.app */;
 			productType = "com.apple.product-type.application";
@@ -140,10 +144,6 @@
 				Base,
 			);
 			mainGroup = B536B4CC27F6ABC2003A1210;
-			packageReferences = (
-				B536B4E627F6B82D003A1210 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				B536B4F127FFC616003A1210 /* XCRemoteSwiftPackageReference "CombineFirebase" */,
-			);
 			productRefGroup = B536B4D627F6ABC2003A1210 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -165,6 +165,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EA13F47489A52FBEA237857 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Portfolio-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1BFDAABA798EDE0EC9C05EC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Portfolio/Pods-Portfolio-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Portfolio/Pods-Portfolio-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Portfolio/Pods-Portfolio-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B536B4D127F6ABC2003A1210 /* Sources */ = {
@@ -298,6 +340,7 @@
 		};
 		B536B4E427F6ABC3003A1210 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F4374E92813931774BE8372 /* Pods-Portfolio.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -327,6 +370,7 @@
 		};
 		B536B4E527F6ABC3003A1210 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC678A0C9CF75D97E1E02FF0 /* Pods-Portfolio.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -376,63 +420,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		B536B4E627F6B82D003A1210 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-		B536B4F127FFC616003A1210 /* XCRemoteSwiftPackageReference "CombineFirebase" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/rever-ai/CombineFirebase";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.3.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		B536B4E727F6B82D003A1210 /* FirebaseAnalytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B536B4E627F6B82D003A1210 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalytics;
-		};
-		B536B4E927F6B82D003A1210 /* FirebaseAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B536B4E627F6B82D003A1210 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAuth;
-		};
-		B536B4EB27F6B82D003A1210 /* FirebaseDatabase */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B536B4E627F6B82D003A1210 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseDatabase;
-		};
-		B536B4F227FFC616003A1210 /* CombineFirebase */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B536B4F127FFC616003A1210 /* XCRemoteSwiftPackageReference "CombineFirebase" */;
-			productName = CombineFirebase;
-		};
-		B536B4F427FFC616003A1210 /* CombineFirebaseAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B536B4F127FFC616003A1210 /* XCRemoteSwiftPackageReference "CombineFirebase" */;
-			productName = CombineFirebaseAuth;
-		};
-		B536B4F627FFC616003A1210 /* CombineFirebaseDatabase */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B536B4F127FFC616003A1210 /* XCRemoteSwiftPackageReference "CombineFirebase" */;
-			productName = CombineFirebaseDatabase;
-		};
-		B536B4F827FFC616003A1210 /* CombineFirebaseFirestore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B536B4F127FFC616003A1210 /* XCRemoteSwiftPackageReference "CombineFirebase" */;
-			productName = CombineFirebaseFirestore;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B536B4CD27F6ABC2003A1210 /* Project object */;
 }
