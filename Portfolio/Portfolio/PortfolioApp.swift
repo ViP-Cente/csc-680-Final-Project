@@ -10,14 +10,14 @@ import Firebase
 
 @main
 struct PortfolioApp: App {
-    
-    init(){
-        FirebaseApp.configure()
-    }
-    
-    var body: some Scene {
-        WindowGroup {
-            ContentView().environmentObject(SessionStore())
+    @StateObject var viewRouter = ViewRouter()
+        
+        init() {
+            FirebaseApp.configure()
         }
-    }
-}
+        
+        var body: some Scene {
+            WindowGroup {
+                MotherView().environmentObject(viewRouter)
+            }
+        }}
