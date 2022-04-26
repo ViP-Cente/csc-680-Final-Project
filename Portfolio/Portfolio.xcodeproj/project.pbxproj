@@ -17,6 +17,8 @@
 		B56300F82800B18500E06098 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56300F72800B18500E06098 /* SignUpView.swift */; };
 		B56300FC2811292400E06098 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56300FB2811292400E06098 /* ViewRouter.swift */; };
 		B56300FE281129DC00E06098 /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56300FD281129DC00E06098 /* MotherView.swift */; };
+		F35277AC281644C90094EDFE /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35277AB281644C90094EDFE /* PhotoPicker.swift */; };
+		F36CB073281633B100413AFF /* CreatePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CB072281633B100413AFF /* CreatePostView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		B56300FB2811292400E06098 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		B56300FD281129DC00E06098 /* MotherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
 		CC678A0C9CF75D97E1E02FF0 /* Pods-Portfolio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Portfolio.release.xcconfig"; path = "Target Support Files/Pods-Portfolio/Pods-Portfolio.release.xcconfig"; sourceTree = "<group>"; };
+		F35277AB281644C90094EDFE /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+		F36CB072281633B100413AFF /* CreatePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 				B56300FA281128A300E06098 /* Views */,
 				B536B4D827F6ABC2003A1210 /* PortfolioApp.swift */,
 				B56300FB2811292400E06098 /* ViewRouter.swift */,
+				F35277AB281644C90094EDFE /* PhotoPicker.swift */,
 				B536B4DC27F6ABC3003A1210 /* Assets.xcassets */,
 				B56300F92811114C00E06098 /* Info.plist */,
 				B536B4ED27FE4837003A1210 /* GoogleService-Info.plist */,
@@ -103,6 +108,7 @@
 				B56300F1280024AF00E06098 /* SignInView.swift */,
 				B56300F72800B18500E06098 /* SignUpView.swift */,
 				B56300FD281129DC00E06098 /* MotherView.swift */,
+				F36CB072281633B100413AFF /* CreatePostView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -249,9 +255,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F36CB073281633B100413AFF /* CreatePostView.swift in Sources */,
 				B536B4DB27F6ABC2003A1210 /* ContentView.swift in Sources */,
 				B56300FE281129DC00E06098 /* MotherView.swift in Sources */,
 				B56300F82800B18500E06098 /* SignUpView.swift in Sources */,
+				F35277AC281644C90094EDFE /* PhotoPicker.swift in Sources */,
 				B536B4D927F6ABC2003A1210 /* PortfolioApp.swift in Sources */,
 				B56300FC2811292400E06098 /* ViewRouter.swift in Sources */,
 				B56300F2280024AF00E06098 /* SignInView.swift in Sources */,

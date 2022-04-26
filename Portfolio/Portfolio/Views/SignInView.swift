@@ -41,6 +41,11 @@ struct SignInView: View {
                     .foregroundColor(.red)
             }
             Spacer()
+            Button(action: {
+                viewRouter.currentPage = .createPostPage
+            }) {
+                Text("Create Post")
+            }
             HStack {
                 Text("Don't have an account?")
                 Button(action: {
@@ -71,7 +76,7 @@ struct SignInView: View {
                 signInProcessing = false
             case .some(_):
                 print("User signed in")
-                signInProcessing = false
+                signInProcessing = true
                 withAnimation {
                     viewRouter.currentPage = .homePage
                 }

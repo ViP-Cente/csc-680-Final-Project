@@ -19,6 +19,8 @@ struct MotherView: View {
             SignInView()
         case .homePage:
             ContentView()
+        case .createPostPage:
+            CreatePostView()
         }
     }
 }
