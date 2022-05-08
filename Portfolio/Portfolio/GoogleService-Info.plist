@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>906223536574-ljateko37t74rsinpjld1lbdv068c1tk.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.906223536574-ljateko37t74rsinpjld1lbdv068c1tk</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDlYVeJ8oUuRm2mVBfLikQksHLWnZp4hy8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>906223536574</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>vpericone.sfsu.edu.Portfolio</string>
+	<key>PROJECT_ID</key>
+	<string>portfolio-app-b6992</string>
+	<key>STORAGE_BUCKET</key>
+	<string>portfolio-app-b6992.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:906223536574:ios:09383a591130c1341691ef</string>
+</dict>
+</plist>
