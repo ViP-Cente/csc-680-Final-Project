@@ -6,21 +6,6 @@
 //
 
 import SwiftUI
-import Firebase
-
-class FirebaseManager: NSObject {
-    
-    let storage: Storage
-    
-    static let shared = FirebaseManager()
-    
-    override init() {
-        FirebaseApp.configure()
-        self.storage = Storage.storage()
-        
-        super.init()
-    }
-}
 
 
 struct CreatePostView: View {
@@ -54,7 +39,7 @@ struct CreatePostView: View {
                 }
             }
             Button("Post") {
-                //imageToStorage()
+                //FirebaseManager.shared.imageToStorage(imageShowing: imageShowing)
             }
             VStack {
                 if let status = self.imageUploadStatus {
@@ -63,7 +48,7 @@ struct CreatePostView: View {
             }
             Spacer()
             Button("Back"){
-                viewRouter.currentPage = .signInPage
+                viewRouter.currentPage = .homePage
             }
         }
         .sheet(isPresented: $isShowingPhotoPicker , content: {
@@ -71,36 +56,6 @@ struct CreatePostView: View {
         })
     }
     
-//    private func imageToStorage(){
-//        print("IM here")
-//        let filename = UUID().uuidString
-//        print("IM here")
-//        guard let uid = Auth.auth().currentUser?.uid else {
-//            print("User not accessed.")
-//            return
-//        }
-//        print("IM here2")
-//        let ref = FirebaseManager.shared.storage.reference(withPath: filename)
-//        print("IM here3")
-//        guard let imageData = self.imageShowing?.jpegData(compressionQuality: 0.5) else {
-//            print("imagedata not acccessed.")
-//        return
-//        }
-//        ref.putData(imageData, metadata: nil){ metadata, err in
-//            if let err = err {
-//                print("Unable to upload image to the storage -> \(err)")
-//                return
-//            }
-//        ref.downloadURL{ url, err in
-//            if let err = err {
-//                print("Failed to retreive downloadURL -> \(err)")
-//                return
-//            }
-//            print("Successfully stored image with url -> \(url?.absoluteString ?? "")")
-//        }
-//    }
-//
-//    }
     
 }
 

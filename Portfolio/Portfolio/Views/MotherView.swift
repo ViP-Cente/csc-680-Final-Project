@@ -15,8 +15,8 @@ struct MotherView: View {
         switch viewRouter.currentPage {
         case .signUpPage:
             SignUpView()
-        case .signInPage:
-            SignInView()
+        case .loginPage:
+            LoginView()
         case .homePage:
             ContentView()
         case .createPostPage:

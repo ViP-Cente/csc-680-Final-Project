@@ -6,9 +6,9 @@ target 'Portfolio' do
   use_frameworks!
 
   # Pods for Portfolio
-pod 'Firebase/Auth'
-pod 'Firebase/Firestore'
-pod 'FirebaseUI'
+pod 'Firebase'	
+pod 'FirebaseFirestore'
 pod 'FirebaseAuth'
+pod 'FirebaseStorage'
 pod 'GoogleSignIn'
 end

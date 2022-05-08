@@ -9,13 +9,13 @@ import SwiftUI
 
 class ViewRouter: ObservableObject {
     
-    @Published var currentPage: Page = .signInPage
+    @Published var currentPage: Page = .loginPage
     
 }
 
 enum Page {
     case signUpPage
-    case signInPage
+    case loginPage
     case homePage
     case createPostPage
 }

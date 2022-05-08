@@ -8,15 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		3ED8AE5567B122E932B63AE2 /* Pods_Portfolio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A06B2A4544AB96C7A9917D85 /* Pods_Portfolio.framework */; };
+		B5086BEB28274BFC008C87C5 /* LoginCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5086BEA28274BFC008C87C5 /* LoginCredentials.swift */; };
+		B5086BED28274CE5008C87C5 /* SignUpCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5086BEC28274CE5008C87C5 /* SignUpCredentials.swift */; };
 		B536B4D927F6ABC2003A1210 /* PortfolioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B536B4D827F6ABC2003A1210 /* PortfolioApp.swift */; };
 		B536B4DB27F6ABC2003A1210 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B536B4DA27F6ABC2003A1210 /* ContentView.swift */; };
 		B536B4DD27F6ABC3003A1210 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B536B4DC27F6ABC3003A1210 /* Assets.xcassets */; };
 		B536B4E027F6ABC3003A1210 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B536B4DF27F6ABC3003A1210 /* Preview Assets.xcassets */; };
 		B536B4EE27FE4837003A1210 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B536B4ED27FE4837003A1210 /* GoogleService-Info.plist */; };
-		B56300F2280024AF00E06098 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56300F1280024AF00E06098 /* SignInView.swift */; };
+		B56300F2280024AF00E06098 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56300F1280024AF00E06098 /* LoginView.swift */; };
 		B56300F82800B18500E06098 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56300F72800B18500E06098 /* SignUpView.swift */; };
 		B56300FC2811292400E06098 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56300FB2811292400E06098 /* ViewRouter.swift */; };
 		B56300FE281129DC00E06098 /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56300FD281129DC00E06098 /* MotherView.swift */; };
+		B58643C32825CAA60097B243 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58643C22825CAA60097B243 /* FirebaseManager.swift */; };
 		F35277AC281644C90094EDFE /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35277AB281644C90094EDFE /* PhotoPicker.swift */; };
 		F36CB073281633B100413AFF /* CreatePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CB072281633B100413AFF /* CreatePostView.swift */; };
 /* End PBXBuildFile section */
@@ -24,17 +27,20 @@
 /* Begin PBXFileReference section */
 		4F4374E92813931774BE8372 /* Pods-Portfolio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Portfolio.debug.xcconfig"; path = "Target Support Files/Pods-Portfolio/Pods-Portfolio.debug.xcconfig"; sourceTree = "<group>"; };
 		A06B2A4544AB96C7A9917D85 /* Pods_Portfolio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Portfolio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5086BEA28274BFC008C87C5 /* LoginCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCredentials.swift; sourceTree = "<group>"; };
+		B5086BEC28274CE5008C87C5 /* SignUpCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCredentials.swift; sourceTree = "<group>"; };
 		B536B4D527F6ABC2003A1210 /* Portfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Portfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B536B4D827F6ABC2003A1210 /* PortfolioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioApp.swift; sourceTree = "<group>"; };
 		B536B4DA27F6ABC2003A1210 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B536B4DC27F6ABC3003A1210 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B536B4DF27F6ABC3003A1210 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B536B4ED27FE4837003A1210 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		B56300F1280024AF00E06098 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		B56300F1280024AF00E06098 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		B56300F72800B18500E06098 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		B56300F92811114C00E06098 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B56300FB2811292400E06098 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		B56300FD281129DC00E06098 /* MotherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
+		B58643C22825CAA60097B243 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		CC678A0C9CF75D97E1E02FF0 /* Pods-Portfolio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Portfolio.release.xcconfig"; path = "Target Support Files/Pods-Portfolio/Pods-Portfolio.release.xcconfig"; sourceTree = "<group>"; };
 		F35277AB281644C90094EDFE /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
 		F36CB072281633B100413AFF /* CreatePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostView.swift; sourceTree = "<group>"; };
@@ -60,6 +66,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B5086BE7282747A0008C87C5 /* Partials */ = {
+			isa = PBXGroup;
+			children = (
+				B5086BEA28274BFC008C87C5 /* LoginCredentials.swift */,
+				B5086BEC28274CE5008C87C5 /* SignUpCredentials.swift */,
+			);
+			path = Partials;
+			sourceTree = "<group>";
+		};
 		B536B4CC27F6ABC2003A1210 = {
 			isa = PBXGroup;
 			children = (
@@ -81,10 +96,11 @@
 		B536B4D727F6ABC2003A1210 /* Portfolio */ = {
 			isa = PBXGroup;
 			children = (
-				B56300FA281128A300E06098 /* Views */,
 				B536B4D827F6ABC2003A1210 /* PortfolioApp.swift */,
 				B56300FB2811292400E06098 /* ViewRouter.swift */,
+				B58643C22825CAA60097B243 /* FirebaseManager.swift */,
 				F35277AB281644C90094EDFE /* PhotoPicker.swift */,
+				B56300FA281128A300E06098 /* Views */,
 				B536B4DC27F6ABC3003A1210 /* Assets.xcassets */,
 				B56300F92811114C00E06098 /* Info.plist */,
 				B536B4ED27FE4837003A1210 /* GoogleService-Info.plist */,
@@ -104,8 +120,9 @@
 		B56300FA281128A300E06098 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B5086BE7282747A0008C87C5 /* Partials */,
 				B536B4DA27F6ABC2003A1210 /* ContentView.swift */,
-				B56300F1280024AF00E06098 /* SignInView.swift */,
+				B56300F1280024AF00E06098 /* LoginView.swift */,
 				B56300F72800B18500E06098 /* SignUpView.swift */,
 				B56300FD281129DC00E06098 /* MotherView.swift */,
 				F36CB072281633B100413AFF /* CreatePostView.swift */,
@@ -134,7 +151,6 @@
 				B536B4D227F6ABC2003A1210 /* Frameworks */,
 				B536B4D327F6ABC2003A1210 /* Resources */,
 				C1BFDAABA798EDE0EC9C05EC /* [CP] Embed Pods Frameworks */,
-				1EE8A283448C64B173AE3536 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,23 +230,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		1EE8A283448C64B173AE3536 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Portfolio/Pods-Portfolio-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Portfolio/Pods-Portfolio-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Portfolio/Pods-Portfolio-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C1BFDAABA798EDE0EC9C05EC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -258,11 +257,14 @@
 				F36CB073281633B100413AFF /* CreatePostView.swift in Sources */,
 				B536B4DB27F6ABC2003A1210 /* ContentView.swift in Sources */,
 				B56300FE281129DC00E06098 /* MotherView.swift in Sources */,
+				B58643C32825CAA60097B243 /* FirebaseManager.swift in Sources */,
 				B56300F82800B18500E06098 /* SignUpView.swift in Sources */,
 				F35277AC281644C90094EDFE /* PhotoPicker.swift in Sources */,
+				B5086BEB28274BFC008C87C5 /* LoginCredentials.swift in Sources */,
 				B536B4D927F6ABC2003A1210 /* PortfolioApp.swift in Sources */,
+				B5086BED28274CE5008C87C5 /* SignUpCredentials.swift in Sources */,
 				B56300FC2811292400E06098 /* ViewRouter.swift in Sources */,
-				B56300F2280024AF00E06098 /* SignInView.swift in Sources */,
+				B56300F2280024AF00E06098 /* LoginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

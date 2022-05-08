@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Firebase
 
 struct ContentView: View {
     
@@ -23,18 +22,24 @@ struct ContentView: View {
                             if signOutProcessing {
                                 ProgressView()
                             } else {
+//                                Button("Create Post"){
+//                                    viewRouter.currentPage = .createPostPage
+//                                }
                                 Button("Sign Out") {
                                     signOutUser()
                                 }
                             }
                         }
                     }
+                Button("Create Post"){
+                    viewRouter.currentPage = .createPostPage
+                }.padding()
             }
         }
         
         func signOutUser() {
             signOutProcessing = true
-            let firebaseAuth = Auth.auth()
+            let firebaseAuth = FirebaseManager.shared.auth
             do {
               try firebaseAuth.signOut()
             } catch let signOutError as NSError {
@@ -42,7 +47,7 @@ struct ContentView: View {
                 signOutProcessing = false
             }
             withAnimation {
-                viewRouter.currentPage = .signInPage
+                viewRouter.currentPage = .loginPage
             }
         }
     }
