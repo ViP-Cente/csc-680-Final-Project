@@ -23,7 +23,6 @@
 		F35277AC281644C90094EDFE /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35277AB281644C90094EDFE /* PhotoPicker.swift */; };
 		F361DD99282C662200107612 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F361DD98282C662200107612 /* UserProfileView.swift */; };
 		F36CB073281633B100413AFF /* CreatePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CB072281633B100413AFF /* CreatePostView.swift */; };
-		F3DDDF9C282CCF4700D22B97 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = F3DDDF9B282CCF4700D22B97 /* SDWebImageSwiftUI */; };
 		F3DDDF9E282CD4A100D22B97 /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DDDF9D282CD4A000D22B97 /* UserProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,7 +55,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3DDDF9C282CCF4700D22B97 /* SDWebImageSwiftUI in Frameworks */,
 				3ED8AE5567B122E932B63AE2 /* Pods_Portfolio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,7 +164,6 @@
 			);
 			name = Portfolio;
 			packageProductDependencies = (
-				F3DDDF9B282CCF4700D22B97 /* SDWebImageSwiftUI */,
 			);
 			productName = Portfolio;
 			productReference = B536B4D527F6ABC2003A1210 /* Portfolio.app */;
@@ -197,7 +194,6 @@
 			);
 			mainGroup = B536B4CC27F6ABC2003A1210;
 			packageReferences = (
-				F3DDDF9A282CCF4700D22B97 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = B536B4D627F6ABC2003A1210 /* Products */;
 			projectDirPath = "";
@@ -487,25 +483,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		F3DDDF9A282CCF4700D22B97 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		F3DDDF9B282CCF4700D22B97 /* SDWebImageSwiftUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F3DDDF9A282CCF4700D22B97 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
-			productName = SDWebImageSwiftUI;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B536B4CD27F6ABC2003A1210 /* Project object */;
 }
