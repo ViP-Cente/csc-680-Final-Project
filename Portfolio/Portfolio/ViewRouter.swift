@@ -18,4 +18,5 @@ enum Page {
     case loginPage
     case homePage
     case createPostPage
+    case profile
 }

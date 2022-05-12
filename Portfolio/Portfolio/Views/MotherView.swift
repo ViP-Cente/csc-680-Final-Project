@@ -21,6 +21,8 @@ struct MotherView: View {
             ContentView()
         case .createPostPage:
             CreatePostView()
+        case .profile:
+            UserProfileView()
         }
     }
 }

@@ -15,7 +15,9 @@ struct ContentView: View {
         
         var body: some View {
             NavigationView {
-                Text("HomeView")
+                Button("Profile"){
+                    viewRouter.currentPage = .profile
+                }
                     .navigationTitle("App Title")
                     .toolbar {
                         ToolbarItem(placement: .navigationBarTrailing) {
