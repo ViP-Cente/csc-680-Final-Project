@@ -2,6 +2,7 @@
 
 ## Group Members
 Vicente Pericone
+<br>
 Manjot Singh
 
 ## Project Proposal
