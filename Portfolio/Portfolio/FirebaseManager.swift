@@ -28,24 +28,21 @@ class FirebaseManager: NSObject {
         super.init()
     }
     
-    public func imageToStorage(imageShowing: UIImage?, urlHandler: @escaping (URL) -> Void){
+    public func imageToStorage(id: String, imageShowing: UIImage?, urlHandler: @escaping (String, URL) -> Void){
         //        print("IM here")
         //let filename = UUID().uuidString
         //        print("IM here")
-        guard let uid = FirebaseManager.shared.auth.currentUser?.uid else {
-            print("User not accessed.")
-            return
-        }
+        
         //print("IM here2")
-        let ref = FirebaseManager.shared.storage.reference(withPath: uid)
+        let ref = FirebaseManager.shared.storage.reference(withPath: id)
         //print("IM here3")
         
-        var userImg = imageShowing
-        if userImg == nil{
-            userImg = UIImage(named: "default-placeholder")
+        var img = imageShowing
+        if img == nil{
+            img = UIImage(named: "default-placeholder")
         }
         
-        guard let imageData = userImg?.jpegData(compressionQuality: 0.5) else {
+        guard let imageData = img?.jpegData(compressionQuality: 0.5) else {
             print("imagedata not acccessed.")
             
             return
@@ -67,7 +64,7 @@ class FirebaseManager: NSObject {
                     return
                 }
                 
-                urlHandler(url)
+                urlHandler(id, url)
                 
                 return
             }

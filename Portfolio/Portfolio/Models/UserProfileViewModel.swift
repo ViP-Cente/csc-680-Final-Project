@@ -4,7 +4,6 @@
 //
 //  Created by Manjot Hundal on 5/11/22.
 //
-
 import SwiftUI
 
 struct LoggedInProfile {
@@ -43,7 +42,7 @@ class UserProfileViewModel: ObservableObject {
                 let username = data["username"] as? String ?? ""
                 let profileImageUrl = data["profileImageUrl"] as? String ?? ""
                 self.loggedUser = LoggedInProfile(uid: uid, email: email,username: username, profileImageUrl: profileImageUrl)
-                
+                print(self.loggedUser?.username)
             }
     }
 }
