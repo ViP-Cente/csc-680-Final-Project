@@ -31,6 +31,7 @@ struct UserProfileView: View {
                         Text("Back")
                     }
                 })
+                .accentColor(.red)
             }
         }
     }
@@ -39,6 +40,7 @@ struct UserProfileView: View {
 struct UserProfile_Previews: PreviewProvider {
     static var previews: some View {
         UserProfileView()
+            .preferredColorScheme(.light)
     }
 }
 

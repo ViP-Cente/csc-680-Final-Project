@@ -74,7 +74,7 @@ struct SignUpView: View {
                 Button(action: {
                     viewRouter.currentPage = .loginPage
                 }) {
-                    Text("Log In")
+                    Text("Log In").foregroundColor(.red)
                 }
             }
             .opacity(0.9).sheet(isPresented: $isShowingPhotoPicker , content: {
