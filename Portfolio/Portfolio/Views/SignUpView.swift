@@ -96,21 +96,22 @@ struct SignUpView: View {
                 return
             }
             
-            print("Successfully Created User: \(result?.user.uid ?? "")")
+            guard let uid = result?.user.uid else{
+                return
+            }
+            
+            print("Successfully Created User: \(uid)")
             
             
-            FirebaseManager.shared.imageToStorage(imageShowing: imageShowing, urlHandler: storeUserInformation(imageProfileUrl:))
+            FirebaseManager.shared.imageToStorage(id: uid, imageShowing: imageShowing, urlHandler: storeUserInformation(id:imageProfileUrl:))
             
         }
         
     }
-    private func storeUserInformation(imageProfileUrl: URL){
-        guard let uid = FirebaseManager.shared.auth.currentUser?.uid else {
-            return
-        }
-        let userData = ["username": self.username, "email": self.email, "uid": uid, "profileImageUrl": imageProfileUrl.absoluteString]
+    private func storeUserInformation(id: String, imageProfileUrl: URL){
+        let userData = ["username": self.username, "email": self.email, "uid": id, "profileImageUrl": imageProfileUrl.absoluteString]
         FirebaseManager.shared.firestore.collection("users")
-            .document(uid).setData(userData) { err in
+            .document(id).setData(userData) { err in
                 if let err = err{
                     print(err)
                     self.signUpErrorMessage = "\(err)"

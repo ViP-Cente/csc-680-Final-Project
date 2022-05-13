@@ -7,62 +7,72 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
     
+    @ObservedObject private var postsModel = PostsModel()
     @EnvironmentObject var viewRouter: ViewRouter
+    
+    @State var signOutProcessing = false
+    @State var userModel: UserProfileViewModel?
+    
+    var body: some View {
         
-        @State var signOutProcessing = false
-        
-        var body: some View {
             NavigationView {
-                Image(uiImage: UIImage(named: "default-placeholder")!)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .padding(.all)
-                    .navigationTitle("Portfolios")
-                    .toolbar {
-                        ToolbarItemGroup(placement: .navigationBarTrailing) {
-                            Button{
-                                viewRouter.currentPage = .createPostPage
-                            }label: {
-                                Label("Create Post", systemImage: "plus.rectangle.fill" )
-                            }
-                            Button{
-                                viewRouter.currentPage = .profile
-                            }label: {
-                                Label("Profile", systemImage: "person.crop.circle.fill" )
-                            }
-                            if signOutProcessing {
-                                ProgressView()
-                            } else {
+                List{
+                    ForEach(postsModel.posts){ post in
+                        PostRow(post: post)
+                        
+                    }
+                }
+                .navigationTitle("App Title")
+                .toolbar {
+                    ToolbarItem(placement: .navigation) {
+                        if signOutProcessing {
+                            ProgressView()
+                        } else {
+                            HStack{
+                                Button("Profile"){
+                                    viewRouter.currentPage = .profile
+                                }
+                                
+                                Button("Create Post"){
+                                    viewRouter.currentPage = .createPostPage
+                                }
+
                                 Button("Sign Out") {
                                     signOutUser()
                                 }
                             }
+                            
                         }
                     }
+                }
+        }}
+    
+    func signOutUser() {
+        signOutProcessing = true
+        let firebaseAuth = FirebaseManager.shared.auth
+        do {
+            try firebaseAuth.signOut()
+        } catch let signOutError as NSError {
+            print("Error signing out: %@", signOutError)
+            signOutProcessing = false
                     .accentColor(.red)
             }
+
         }
-        
-        func signOutUser() {
-            signOutProcessing = true
-            let firebaseAuth = FirebaseManager.shared.auth
-            do {
-              try firebaseAuth.signOut()
-            } catch let signOutError as NSError {
-              print("Error signing out: %@", signOutError)
-                signOutProcessing = false
-            }
-            withAnimation {
-                viewRouter.currentPage = .loginPage
-            }
+        withAnimation {
+            viewRouter.currentPage = .loginPage
         }
     }
+}
 
-    struct ContentView_Previews: PreviewProvider {
-        static var previews: some View {
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        Group {
             ContentView()
                 .preferredColorScheme(.light)
         }
     }
+}

@@ -25,7 +25,9 @@ struct MotherView: View {
             UserProfileView()
         }
     }
-}
+    
+    }
+    
 
 struct MotherView_Previews: PreviewProvider {
     static var previews: some View {
