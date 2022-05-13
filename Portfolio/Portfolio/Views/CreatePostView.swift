@@ -25,6 +25,7 @@ struct CreatePostView: View {
     @State var imageUploadStatus: String?
     
     var body: some View {
+
         VStack{
             Text("Create Post")
                 .fontWeight(.bold)
@@ -38,17 +39,19 @@ struct CreatePostView: View {
                     isShowingPhotoPicker.toggle()
                 } label: {
                     VStack{
+
                         if let image = self.imageShowing {
                             Image(uiImage: image)
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                                .padding(.all)
                                 .frame(width: 256, height: 256)
+
                         } else {
                             Image(uiImage: UIImage(named: "default-placeholder")!)
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .padding(.all)
+
                                 .frame(width: 256, height: 256)
                         }
                     }
@@ -88,6 +91,7 @@ struct CreatePostView: View {
             }
             
         }.opacity(0.9).sheet(isPresented: $isShowingPhotoPicker , content: {
+
             PhotoPicker(imageShowing: $imageShowing)
         })
         

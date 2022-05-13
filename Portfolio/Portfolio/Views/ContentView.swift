@@ -39,6 +39,7 @@ struct ContentView: View {
                                 Button("Create Post"){
                                     viewRouter.currentPage = .createPostPage
                                 }
+
                                 Button("Sign Out") {
                                     signOutUser()
                                 }
@@ -57,6 +58,9 @@ struct ContentView: View {
         } catch let signOutError as NSError {
             print("Error signing out: %@", signOutError)
             signOutProcessing = false
+                    .accentColor(.red)
+            }
+
         }
         withAnimation {
             viewRouter.currentPage = .loginPage
@@ -68,8 +72,7 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             ContentView()
-                .previewInterfaceOrientation(.portraitUpsideDown)
-            
+                .preferredColorScheme(.light)
         }
     }
 }

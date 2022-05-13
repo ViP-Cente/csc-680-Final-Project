@@ -1,5 +1,10 @@
 # csc-680-Final-Project
 
+## Group Members
+Vicente Pericone
+<br>
+Manjot Singh
+
 ## Project Proposal
 This is an IOS App that will allow users to create a portfolio and upload projects that is visible to other users. In addiition to uploading projects, users will be able to post updates about their projects. 
 <br>
