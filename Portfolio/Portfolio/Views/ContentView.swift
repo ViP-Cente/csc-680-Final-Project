@@ -15,27 +15,33 @@ struct ContentView: View {
         
         var body: some View {
             NavigationView {
-                Button("Profile"){
-                    viewRouter.currentPage = .profile
-                }
-                    .navigationTitle("App Title")
+                Image(uiImage: UIImage(named: "default-placeholder")!)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .padding(.all)
+                    .navigationTitle("Portfolios")
                     .toolbar {
-                        ToolbarItem(placement: .navigationBarTrailing) {
+                        ToolbarItemGroup(placement: .navigationBarTrailing) {
+                            Button{
+                                viewRouter.currentPage = .createPostPage
+                            }label: {
+                                Label("Create Post", systemImage: "plus.rectangle.fill" )
+                            }
+                            Button{
+                                viewRouter.currentPage = .profile
+                            }label: {
+                                Label("Profile", systemImage: "person.crop.circle.fill" )
+                            }
                             if signOutProcessing {
                                 ProgressView()
                             } else {
-//                                Button("Create Post"){
-//                                    viewRouter.currentPage = .createPostPage
-//                                }
                                 Button("Sign Out") {
                                     signOutUser()
                                 }
                             }
                         }
                     }
-                Button("Create Post"){
-                    viewRouter.currentPage = .createPostPage
-                }.padding()
+                    .accentColor(.red)
             }
         }
         
@@ -57,5 +63,6 @@ struct ContentView: View {
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
             ContentView()
+                .preferredColorScheme(.light)
         }
     }

@@ -46,14 +46,14 @@ struct LoginView: View {
             Button(action: {
                 viewRouter.currentPage = .createPostPage
             }) {
-                Text("Create Post")
+                Text("Create Post").foregroundColor(.red)
             }
             HStack {
                 Text("Don't have an account?")
                 Button(action: {
                     viewRouter.currentPage = .signUpPage
                 }) {
-                    Text("Sign Up")
+                    Text("Sign Up").foregroundColor(.red)
                 }
             }
                 .opacity(0.9)

@@ -16,39 +16,47 @@ struct CreatePostView: View {
     @State var imageUploadStatus: String?
     
     var body: some View {
-        VStack{
-            Text("Create Post")
-                .fontWeight(.bold)
-                .font(.system(.largeTitle, design: .rounded ))
-                .foregroundColor(.gray)
-            Button {
-                isShowingPhotoPicker.toggle()
-            } label: {
-                VStack {
-                    if let image = self.imageShowing {
-                        Image(uiImage: image)
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .padding(.all)
-                    } else {
-                        Image(uiImage: UIImage(named: "default-placeholder")!)
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .padding(.all)
+        NavigationView{
+            VStack{
+//                Text("Create Post")
+//                    .fontWeight(.bold)
+//                    .font(.system(.largeTitle, design: .rounded ))
+//                    .foregroundColor(.secondary)
+                Button {
+                    isShowingPhotoPicker.toggle()
+                } label: {
+                    VStack {
+                        if let image = self.imageShowing {
+                            Image(uiImage: image)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .padding(.all)
+                        } else {
+                            Image(uiImage: UIImage(named: "default-placeholder")!)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .padding(.all)
+                        }
                     }
                 }
-            }
-            Button("Post") {
-                //FirebaseManager.shared.imageToStorage(imageShowing: imageShowing)
-            }
-            VStack {
-                if let status = self.imageUploadStatus {
-                    Text("Status: \(status)")
+                Button("Post") {
+                    //FirebaseManager.shared.imageToStorage(imageShowing: imageShowing)
+                    viewRouter.currentPage = .homePage
+                }.foregroundColor(.red).font(.title).background(.bar)
+                VStack {
+                    if let status = self.imageUploadStatus {
+                        Text("Status: \(status)")
+                    }
                 }
-            }
-            Spacer()
-            Button("Back"){
-                viewRouter.currentPage = .homePage
+                Spacer()
+                    .navigationTitle("Create Post")
+                    .navigationBarItems(leading: Button(action: {viewRouter.currentPage = .homePage}) {
+                        HStack {
+                            Image(systemName: "arrow.left")
+                            Text("Back")
+                        }
+                    })
+                    .accentColor(.red)
             }
         }
         .sheet(isPresented: $isShowingPhotoPicker , content: {
