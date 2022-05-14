@@ -2,7 +2,7 @@
 //  SignUpCredentials.swift
 //  Portfolio
 //
-//  Created by JPL-ST-SPRING2021 on 5/7/22.
+//  Created by Vicente Pericone on 5/7/22.
 //
 
 import Foundation
