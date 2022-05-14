@@ -2,7 +2,7 @@
 //  PostRow.swift
 //  Portfolio
 //
-//  Created by JPL-ST-SPRING2021 on 5/12/22.
+//  Created by Vicente Pericone on 5/12/22.
 //
 
 import Foundation
