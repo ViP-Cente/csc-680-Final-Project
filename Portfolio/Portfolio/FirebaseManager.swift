@@ -2,7 +2,7 @@
 //  FirebaseManager.swift
 //  Portfolio
 //
-//  Created by JPL-ST-SPRING2021 on 5/6/22.
+//  Created by Vicente Pericone on 5/6/22.
 //
 
 import Foundation
