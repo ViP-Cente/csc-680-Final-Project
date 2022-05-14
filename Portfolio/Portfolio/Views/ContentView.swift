@@ -22,12 +22,11 @@ struct ContentView: View {
                 List{
                     ForEach(postsModel.posts){ post in
                         PostRow(post: post)
-                        
                     }
                 }
                 .navigationTitle("App Title")
                 .toolbar {
-                    ToolbarItem(placement: .navigation) {
+                    ToolbarItem(placement:.navigationBarTrailing) {
                         if signOutProcessing {
                             ProgressView()
                         } else {
@@ -58,15 +57,12 @@ struct ContentView: View {
         } catch let signOutError as NSError {
             print("Error signing out: %@", signOutError)
             signOutProcessing = false
-                    .accentColor(.red)
+                    
             }
 
         }
-        withAnimation {
-            viewRouter.currentPage = .loginPage
-        }
     }
-}
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

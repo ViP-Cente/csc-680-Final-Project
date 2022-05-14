@@ -25,76 +25,76 @@ struct CreatePostView: View {
     @State var imageUploadStatus: String?
     
     var body: some View {
-
-        VStack{
-            Text("Create Post")
-                .fontWeight(.bold)
-                .font(.system(.largeTitle, design: .rounded ))
-                .foregroundColor(.gray)
-            
-            
-            CreatePostFields(title: $title, description: $description)
-            Group{
-                Button{
-                    isShowingPhotoPicker.toggle()
-                } label: {
-                    VStack{
-
-                        if let image = self.imageShowing {
-                            Image(uiImage: image)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 256, height: 256)
-
-                        } else {
-                            Image(uiImage: UIImage(named: "default-placeholder")!)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .padding(.all)
-
-                                .frame(width: 256, height: 256)
+        
+        NavigationView{
+            VStack{
+                CreatePostFields(title: $title, description: $description)
+                
+                Group{
+                    Button{
+                        isShowingPhotoPicker.toggle()
+                    } label: {
+                        VStack{
+                            
+                            if let image = self.imageShowing {
+                                Image(uiImage: image)
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 256, height: 256)
+                                
+                            } else {
+                                Image(uiImage: UIImage(named: "default-placeholder")!)
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .padding(.all)
+                                
+                                    .frame(width: 256, height: 256)
+                            }
                         }
                     }
                 }
-            }
-            
-            Spacer()
-            Button(action: {
-                createPost(postTitle: title, postDescription: description)
-            }) {
-                Text("Post")
-                    .bold()
-                    .frame(width: 360, height: 50)
-                    .background(.purple)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-            }
-            .disabled(!createProcessing && !title.isEmpty && !description.isEmpty  ? false : true)
-            if createProcessing {
-                ProgressView()
-            }
-            
-            if !createErrorMessage.isEmpty {
-                Text("Failed creating account: \(createErrorMessage)")
-                    .foregroundColor(.red)
-            }
-            if !createSuccessMessage.isEmpty {
-                Text("\(createSuccessMessage)")
-                    .foregroundColor(.green)
-            }
-            
-            VStack {
-                if let status = self.imageUploadStatus {
-                    Text("Status: \(status)")
+                Spacer()
+                Button(action: {
+                    createPost(postTitle: title, postDescription: description)
+                }) {
+                    Text("Post")
+                        .bold()
+                        .frame(width: 360, height: 50)
+                        .background(.purple)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
+                .disabled(!createProcessing && !title.isEmpty && !description.isEmpty  ? false : true)
+                if createProcessing {
+                    ProgressView()
+                }
+                if !createErrorMessage.isEmpty {
+                    Text("Failed creating account: \(createErrorMessage)")
+                        .foregroundColor(.red)
+                }
+                if !createSuccessMessage.isEmpty {
+                    Text("\(createSuccessMessage)")
+                        .foregroundColor(.green)
+                }
+                VStack {
+                    if let status = self.imageUploadStatus {
+                        Text("Status: \(status)")
+                    }
                 }
                 
-            }
-            
-        }.opacity(0.9).sheet(isPresented: $isShowingPhotoPicker , content: {
-
-            PhotoPicker(imageShowing: $imageShowing)
-        })
-        
+            }.navigationBarTitle(Text("Create Post"))
+                .navigationBarItems(leading: Button(action: {viewRouter.currentPage = .homePage}) {
+                    HStack {
+                        Image(systemName: "arrow.left")
+                        Text("Back")
+                    }
+                })
+                .accentColor(.red)
+            .opacity(0.9).sheet(isPresented: $isShowingPhotoPicker , content: {
+                
+                PhotoPicker(imageShowing: $imageShowing)
+            })
+        }
     }
     
     func createPost(postTitle: String, postDescription: String) {
@@ -160,6 +160,9 @@ struct CreatePostView: View {
 
 struct CreatePost_Previews: PreviewProvider {
     static var previews: some View {
-        CreatePostView()
+        Group {
+            CreatePostView()
+            CreatePostView()
+        }
     }
 }
