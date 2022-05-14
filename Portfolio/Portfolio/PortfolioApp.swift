@@ -2,7 +2,7 @@
 //  PortfolioApp.swift
 //  Portfolio
 //
-//  Created by Majot and VIcente on 3/31/22.
+//  Created by Majot and Vicente on 3/31/22.
 //
 
 import SwiftUI
