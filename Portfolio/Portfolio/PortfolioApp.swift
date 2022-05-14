@@ -2,7 +2,7 @@
 //  PortfolioApp.swift
 //  Portfolio
 //
-//  Created by JPL-ST-SPRING2021 on 3/31/22.
+//  Created by Majot and VIcente on 3/31/22.
 //
 
 import SwiftUI
