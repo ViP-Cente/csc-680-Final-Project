@@ -23,7 +23,7 @@ struct PostRow: View {
             WebImage(url: URL(string: post.postImageUrl ))
                 .resizable().scaledToFill()
                 .frame(width: 200, height: 200).cornerRadius(40)
-            Text("DESC: \(post.description )")
+            Text("About: \(post.description )")
                 .font(.system(size: 20))
             Text("Username: \(post.username )")
                 .font(.system(size: 20))

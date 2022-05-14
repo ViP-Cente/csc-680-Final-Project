@@ -50,6 +50,7 @@ struct CreatePostView: View {
                                 
                                     .frame(width: 256, height: 256)
                             }
+
                         }
                     }
                 }
