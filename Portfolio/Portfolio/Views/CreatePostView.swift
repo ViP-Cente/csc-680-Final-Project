@@ -25,8 +25,12 @@ struct CreatePostView: View {
     @State var imageUploadStatus: String?
     
     var body: some View {
-
         VStack{
+            Button{
+                viewRouter.currentPage = .homePage
+            }label: {
+                Label("Back", systemImage: "arrow.left" )
+            }
             Text("Create Post")
                 .fontWeight(.bold)
                 .font(.system(.largeTitle, design: .rounded ))

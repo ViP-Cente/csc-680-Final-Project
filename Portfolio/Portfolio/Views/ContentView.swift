@@ -26,18 +26,22 @@ struct ContentView: View {
                     }
                 }
                 .navigationTitle("App Title")
+                
                 .toolbar {
                     ToolbarItem(placement: .navigation) {
                         if signOutProcessing {
                             ProgressView()
                         } else {
                             HStack{
-                                Button("Profile"){
-                                    viewRouter.currentPage = .profile
-                                }
-                                
-                                Button("Create Post"){
+                                Button{
                                     viewRouter.currentPage = .createPostPage
+                                }label: {
+                                    Label("Create Post", systemImage: "plus.rectangle.fill" )
+                                }
+                                Button{
+                                     viewRouter.currentPage = .profile
+                                }label: {
+                                      Label("Profile", systemImage: "person.crop.circle.fill" )
                                 }
 
                                 Button("Sign Out") {
@@ -48,6 +52,7 @@ struct ContentView: View {
                         }
                     }
                 }
+                .accentColor(.red)
         }}
     
     func signOutUser() {
@@ -58,15 +63,13 @@ struct ContentView: View {
         } catch let signOutError as NSError {
             print("Error signing out: %@", signOutError)
             signOutProcessing = false
-                    .accentColor(.red)
             }
-
-        }
-        withAnimation {
+        withAnimation{
             viewRouter.currentPage = .loginPage
         }
+        }
     }
-}
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
