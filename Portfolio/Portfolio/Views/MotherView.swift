@@ -2,7 +2,7 @@
 //  MotherView.swift
 //  Portfolio
 //
-//  Created by JPL-ST-SPRING2021 on 4/20/22.
+//  Created by Vicente Pericone on 4/20/22.
 //
 
 import SwiftUI
